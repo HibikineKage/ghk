@@ -1,0 +1,10 @@
+[package]
+name = "ghk"
+version = "0.1.0"
+authors = ["Hibikine Kage <goodsmile314159@gmail.com>"]
+
+[dependencies]
+docopt = "0.8"
+serde = "1.0.27"
+serde_derive = "1.0.27"
+oauth2 = "1.2.1"
