@@ -9,16 +9,18 @@ const USAGE: &'static str = "
 GitHucker {version}.
 
 Usage:
-  ghk new [<name>]
+  ghk new [<name>] [-d <description> | --description=<description>]
   ghk (-h | --help)
 
 Options:
-  -h --help  Show this on screen.
+  -h --help                                 Show this on screen.
+  -d DESCRIPTION --description=DESCRIPTION  Set the repository's description.
 ";
 
 #[derive(Debug, Deserialize)]
 struct Args {
     arg_name: Vec<String>,
+    flag_description: String,
     cmd_new: bool,
 }
 fn main() {
